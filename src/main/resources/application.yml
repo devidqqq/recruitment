@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /
+  port: 80
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_recruitment
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    open-in-view: true
+  thymeleaf:
+    mode: HTML5
+    cache: false
