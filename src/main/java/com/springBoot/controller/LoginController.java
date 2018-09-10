@@ -8,7 +8,12 @@ public class LoginController {
 	
 	@RequestMapping("/loginPage")
 	public String loginPage() {
-		return "login.html";
+		return "redirect:html/login.html";
+	}
+	
+	@RequestMapping("/")
+	public String defaultPage() {
+		return "redirect:html/login.html";
 	}
 
 }

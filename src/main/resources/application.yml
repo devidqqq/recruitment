@@ -16,5 +16,4 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     open-in-view: true
   thymeleaf:
-    mode: HTML5
-    cache: false
+    prefix: classpath:/templates
